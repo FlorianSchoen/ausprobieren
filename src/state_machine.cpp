@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<map>
 
 namespace local
 {
@@ -150,6 +151,8 @@ namespace local
 
                         case 4:
                             std::cout << "Code noch nicht implementiert!" << std::endl;
+                            //open::Gehäge neuesgehäge;
+                            //neuesgehäge.optionen();
                             break;
 
                         case 5:
@@ -167,6 +170,61 @@ namespace local
     
     };
 
+}
+
+namespace open
+{
+
+    struct Gehäge
+    {
+        private:
+
+            int anzahl;
+            std::map<std::string, int> gehäge_anztier;
+            int groesse;
+
+
+        public:
+
+            void optionen()
+            {
+                int auswahl;
+
+                while(auswahl != 0)
+                {
+
+                    std::cout << "***********Optionen***********" << std::endl;
+                    std::cout << "1) Tier einem Gehäge zuordnen" << std::endl;
+                    std::cout << "2) Gehäge bearbeiten" << std::endl;
+                    std::cout << "3) Beenden" << std::endl;
+
+                    std::cin >> auswahl;
+
+                    switch(auswahl)
+                    {
+
+                        default:
+                            std::cout << "Irreguläre Eingabe" << std::endl;
+                            break;
+
+                        case 1:
+                            std::cout << "Code noch nicht implementiert" << std::endl;
+                            break;
+
+                        case 2:
+                            std::cout << "Code noch nicht implementiert" << std::endl;
+                            break;
+
+                        case 3:
+                            auswahl = 0;
+                            break;
+                    }
+                }  
+            }
+
+
+
+    };
 }
 
 
